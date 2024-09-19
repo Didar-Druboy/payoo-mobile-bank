@@ -7,7 +7,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     const amountToAddNumber = parseFloat(amountToAdd.value);
     const inputPinNumber = inputPin.value;
     
-    if(inputPinNumber === '1234'){
+    if(inputPinNumber === '8242'){
         let availableBalance = document.getElementById('available-balance');
         const availableBalanceNumber = parseFloat(availableBalance.innerText);
         const newAvailableBalance = availableBalanceNumber + amountToAddNumber;
@@ -31,7 +31,7 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
     const amountToCashOutNumber = parseFloat(amountToCashOut.value);
     const inputPinCashOutNumber = inputPinCashOut.value;
 
-    if(inputPinCashOutNumber === '1234'){
+    if(inputPinCashOutNumber === '8242'){
         let availableBalance = document.getElementById('available-balance');
         const availableBalanceNumber = parseFloat(availableBalance.innerText);
         const newAvailableBalance = availableBalanceNumber - amountToCashOutNumber;
