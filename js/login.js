@@ -9,6 +9,6 @@ document.getElementById('btn-login').addEventListener('click', function(event){
         window.location.href = "./home.html";
         // console.log('valid pin and number')
     }else{
-        window.alert('Invalid Pin or Number')
+        window.alert('Invalid Pin or Number');
     }
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>welcome to your account.</h1>
-    
+    <main class="flex justify-center">
+        <!-- mobile display daisy ui -->
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-4">
+                <!-- available balance section daisy ui -->
+                <div>
+                    <div class="stats shadow">
+                        <div class="stat">
+                          <div id="available-balance" class="stat-value">9400</div>
+                          <div class="stat-desc">Available Balance</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- horizontal line -->
+                <div class="divider"></div>
+                <!-- user action button -->
+                 <div>
+                    <button class="btn btn-lg">Add Money</button>
+                    <button class="btn btn-lg">Cash Out</button>
+                 </div>
+                 <!-- horizontal line -->
+                <div class="divider"></div>
+                 <!-- add money section -->
+                 <div>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount to Add</span>
+                            </label>
+                            <input id="input-amount-to-add" type="text" placeholder="Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin Number</span>
+                            </label>
+                            <input id="input-pin" type="password" placeholder="Pin" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./js/home.js"></script>
 </body>
 </html>
