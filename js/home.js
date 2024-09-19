@@ -1,3 +1,4 @@
+// function of add money
 document.getElementById('btn-add-money').addEventListener('click', function(event){
     event.preventDefault();
     const amountToAdd = document.getElementById('input-amount-to-add').value;
